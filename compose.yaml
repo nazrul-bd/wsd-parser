@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  mysql:
+    image: 'mysql:9.1.0'
+    environment:
+      - 'MYSQL_DATABASE=wsd'
+      - 'MYSQL_PASSWORD=12345678'
+      - 'MYSQL_ROOT_PASSWORD=12345678'
+      - 'MYSQL_USER=nazrul'
+    ports:
+      - '3309:3306'
